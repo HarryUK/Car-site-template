@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unofficial BMW Site</title>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="car, site, buy, sell, a car, new car" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.css" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="bmw-view" style="text-shadow: 1px 1px 20px rgba(0, 0, 0, 1);">
+        <h1 style="font-size: 100px">BMW</h1>
+        <p>Scroll to start</p>
+    </div>
+    <div class="bottomOfPageButton-start">
+            <a href="#bmw-1" class="fas fa-arrow-down"></a>
+        </div>
+    <div class="bg-overlay">
+        <div class="container-fluid" id="home">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+                <a href="#" class=" navbar-brand">BMW</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar ml-auto">
+                        <li class="nav-item">
+                            <a id="homeClick" id="homeClick" href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="bmw-1Click" href="#bmw-1" class="nav-link">Our cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="bmw-2Click" href="#bmw-2" class="nav-link">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-center ad-pop" data-aos="fade-up">
+                <h1>FASTER. <span class="redpc">BETTER.</span> STRONGER.</h1>
+                <p>See our new range of BMW's, you too will be blown away.</p>
+            </div>
+            <div class="ad-pop-2" id="bmw-1">
+                <div class="adin1" data-aos="s-i-f-i" data-aos-offset="200">
+                    <h1>Light will <span class="redpc">always</span> be faster than <span class="redpc">sound.</span></h1>
+                    <p>Our brand new eletric BMW's are quiet yet blazingly fast.</p>
+                </div>
+                <div class="adin2" data-aos="s-i-f-i-2">
+                    <img src="img/bmw.png">
+                </div>
+            </div>
+            <div class="ad-pop-3 text-center" data-aos="fade-in" id="bmw-2">
+                <h1>This was an example</h1>
+                <p>This was an example of an online car shop. This is not an official BMW site,<br>
+                I simply made it in my free time for personal use.
+                </br></p>
+                <br>
+                <p>Site made by <a href="https://github.com/harryuk" class="redpc">Harry Chris</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            AOS.refresh();
+            AOS.init({
+                offset: 300,
+                duration: 800
+                
+            });
+            $("#homeClick").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#home").offset().top
+                }, 1000);
+            });
+            $("#bmw-1Click").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#bmw-1").offset().top
+                }, 1000);
+            });
+            $("#bmw-2Click").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#bmw-2").offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
