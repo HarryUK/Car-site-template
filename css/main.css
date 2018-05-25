@@ -5,6 +5,7 @@ body {
     color: white;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #ab564f;
     background-image: url('../img/phone.jpg');
     background-attachment: initial;
     background-size: cover;
@@ -139,6 +140,7 @@ button.navbar-toggler {
     body {
         overflow:scroll;
         overflow-x: hidden;
+        background-color: black
         background-image: url('../img/bg.jpg');
         background-attachment: fixed;
     }
@@ -163,6 +165,7 @@ button.navbar-toggler {
 }
 @media screen and (min-width: 2000px) {
     body {
+        background-color: #d56041;
         background-image: url('../img/4k.jpg');
     }
     .bottomOfPageButton-start *{
