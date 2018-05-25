@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 body {
     font-family: 'Oswald', sans-serif;
-    background-image: url('../img/bg.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
     z-index: 1;
     color: white;
     overflow-x: hidden; 
+    background-color: black;
 }
 .navbar-brand {
     margin-left: 10px;
@@ -134,6 +131,10 @@ button.navbar-toggler {
     body {
         overflow:scroll;
         overflow-x: hidden;
+        background-image: url('../img/bg.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .adin1 {
         margin-left: 50px;
